@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  
 }
 
 .App-logo {
@@ -14,14 +15,16 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+  min-height: 20vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
 }
 
 .App-link {
@@ -32,7 +35,121 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15vmin;
+  line-height: 15vmin;
+}
+
+.gradient-text {
+  color: transparent;
+  background: conic-gradient(#D9D7F1 12%,
+      #BAABDA 12%, #BAABDA 33%,
+      #E7FBBE 33%, #E7FBBE 55%,
+      #FFCBCB 55%, #FFCBCB 70%,
+      #B5DEFF 70%, #B5DEFF 87%,
+      #F7D1BA 87%);
+  background-size: 50%;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  animation: expand-rev 0.5s ease forwards;
+
+  cursor: pointer;
+}
+
+.gradient-text:hover {
+  animation: expand 0.5s ease forwards;
+}
+
+.secc {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3vmin;
+  margin-top: 3vmin;
+  min-height: 60vh;
+  min-width: 93vw;
+  flex-wrap: wrap;
+  border-radius: 35px;
+
+  background: linear-gradient(115deg, #000000 0%, #00C508 55%, #000000 100%), linear-gradient(115deg, #0057FF 0%, #020077 100%), conic-gradient(from 110deg at -5% 35%, #000000 0deg, #FAFF00 360deg), conic-gradient(from 220deg at 30% 30%, #FF0000 0deg, #0000FF 220deg, #240060 360deg), conic-gradient(from 235deg at 60% 35%, #0089D7 0deg, #0000FF 180deg, #240060 360deg);
+  background-blend-mode: soft-light, soft-light, overlay, screen, normal;
+}
+
+.secc2 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3vmin;
+  margin-top: 3vmin;
+  min-height: 60vh;
+  min-width: 45vw;
+  flex-wrap: wrap;
+  border-radius: 50px;
+  background: #ffffff;
+  box-shadow:  20px 20px 60px #d9d9d9,
+               -20px -20px 60px #ffffff;
+}
+
+.all {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.slider {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@keyframes expand {
+  0% {
+    background-size: 50%;
+    background-position: 0 0;
+  }
+
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+
+  100% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+}
+
+@keyframes expand-rev {
+  0% {
+    background-size: 325%;
+    background-position: -10em -4em;
+  }
+
+  20% {
+    background-size: 55%;
+    background-position: 0 1em;
+  }
+
+  100% {
+    background-size: 50%;
+    background-position: 0 0;
   }
 }
