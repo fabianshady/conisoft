@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+
 }
 
 .App-logo {
@@ -15,16 +15,31 @@
 }
 
 .App-header {
-
-  min-height: 20vh;
+  border-radius: 35px;
+  height: 98vh;
+  width: 98vw;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  margin-right: 1vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  background: rgb(63, 94, 251);
-  background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
+  background-image: linear-gradient(180deg,
+      hsl(259deg 69% 52%) 0%,
+      hsl(261deg 62% 51%) 8%,
+      hsl(263deg 56% 50%) 16%,
+      hsl(265deg 50% 50%) 22%,
+      hsl(269deg 48% 52%) 29%,
+      hsl(273deg 46% 54%) 35%,
+      hsl(276deg 43% 56%) 42%,
+      hsl(290deg 36% 56%) 49%,
+      hsl(304deg 32% 58%) 56%,
+      hsl(316deg 34% 62%) 64%,
+      hsl(346deg 70% 70%) 73%,
+      hsl(11deg 95% 72%) 84%,
+      hsl(33deg 86% 63%) 100%);
 }
 
 .App-link {
@@ -53,6 +68,32 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 15vmin;
   line-height: 15vmin;
+  
+}
+
+h2 {
+  font-size: 4vmin;
+  text-align: center;
+  margin-left: 16vmin;
+  margin-right: 16vmin;
+}
+
+p {
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: justify;
+}
+
+body {
+  
+}
+
+img{
+  margin: 1em;
+}
+
+.menu {
+  align-items:;
 }
 
 .gradient-text {
@@ -77,17 +118,26 @@ h1 {
 }
 
 .secc {
-  display: flex;
-  flex-direction: row;
+
   margin-bottom: 3vmin;
   margin-top: 3vmin;
-  min-height: 60vh;
-  min-width: 93vw;
+  height: 60vh;
+  width: 93vw;
   flex-wrap: wrap;
   border-radius: 35px;
-
-  background: linear-gradient(115deg, #000000 0%, #00C508 55%, #000000 100%), linear-gradient(115deg, #0057FF 0%, #020077 100%), conic-gradient(from 110deg at -5% 35%, #000000 0deg, #FAFF00 360deg), conic-gradient(from 220deg at 30% 30%, #FF0000 0deg, #0000FF 220deg, #240060 360deg), conic-gradient(from 235deg at 60% 35%, #0089D7 0deg, #0000FF 180deg, #240060 360deg);
-  background-blend-mode: soft-light, soft-light, overlay, screen, normal;
+  background-image: linear-gradient(
+    180deg,
+    hsl(33deg 86% 63%) 0%,
+    hsl(33deg 74% 59%) 11%,
+    hsl(33deg 65% 55%) 22%,
+    hsl(33deg 57% 50%) 33%,
+    hsl(32deg 59% 46%) 44%,
+    hsl(32deg 62% 42%) 56%,
+    hsl(32deg 66% 38%) 67%,
+    hsl(32deg 71% 34%) 78%,
+    hsl(33deg 77% 30%) 89%,
+    hsl(33deg 86% 26%) 100%
+  );
 }
 
 .secc2 {
@@ -95,13 +145,23 @@ h1 {
   flex-direction: row;
   margin-bottom: 3vmin;
   margin-top: 3vmin;
-  min-height: 60vh;
-  min-width: 45vw;
+  height: 60vh;
+  width: 45vw;
   flex-wrap: wrap;
   border-radius: 50px;
-  background: #ffffff;
-  box-shadow:  20px 20px 60px #d9d9d9,
-               -20px -20px 60px #ffffff;
+  background-image: linear-gradient(
+  180deg,
+  hsl(259deg 69% 52%) 0%,
+  hsl(259deg 64% 48%) 11%,
+  hsl(259deg 65% 45%) 22%,
+  hsl(259deg 66% 41%) 33%,
+  hsl(259deg 66% 38%) 44%,
+  hsl(259deg 67% 35%) 56%,
+  hsl(259deg 68% 31%) 67%,
+  hsl(259deg 70% 28%) 78%,
+  hsl(259deg 71% 25%) 89%,
+  hsl(259deg 73% 22%) 100%
+);
 }
 
 .all {
@@ -119,6 +179,7 @@ h1 {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
+
 
 @keyframes expand {
   0% {
@@ -153,3 +214,329 @@ h1 {
     background-position: 0 0;
   }
 }
+
+
+
+#cssmenu
+{
+    width:auto;
+    display:block;
+    text-align:center;
+    font-family:"Pathway Gothic One", Helvetica, Arial, sans-serif;
+    line-height:1.2;
+}
+#cssmenu ul
+{
+    width:auto;
+    display:block;
+    font-size:0;
+    text-align:center;
+    color:#fff;
+    
+    border: transparent;
+    margin:0; 
+    padding:0;
+    list-style:none;
+    position:relative;
+    z-index:999999990;
+    border-radius: 3px;
+} 
+
+#cssmenu li
+{
+    display:inline-block;
+    position:relative;    
+    font-size:0; 
+    margin:0;
+    padding:0;
+}
+
+/*Top level items
+---------------------------------------*/
+
+#cssmenu >ul>li>span, #cssmenu >ul>li>a 
+{   
+    font-size:22px;
+    color:inherit;
+    text-decoration:none;
+    padding:20px 20px; 
+    font-weight:400;
+    text-transform:uppercase;
+    letter-spacing:2px;   
+    display:block;   
+    position:relative;
+    transition:all 0.3s;
+}
+#cssmenu li:hover > span, #cssmenu li:hover > a
+{  
+    color:#FFFFFF;
+    background-color:#77A6F7;
+}
+
+/*Sub level items
+---------------------------------------*/
+#cssmenu .dropdown
+{
+    text-align:left;
+    left:0;
+    font-family:inherit;
+    color: #222222;
+    background-color:#FFFFFF;
+    border:none;
+    position:absolute;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    display:none;
+    opacity:0;
+    cursor:default;
+}
+
+#cssmenu .dropdown li {
+    display: block;  
+}
+
+#cssmenu .dropdown li > span, #cssmenu .dropdown li > a, #cssmenu .clm a, #cssmenu .clm h3 
+{
+    font-size:16px;
+    font-weight:400;
+    font-family:inherit;
+    margin:0;
+    padding:8px 20px; 
+    display:block;
+    color:inherit;
+    text-decoration:none;
+}
+#cssmenu .clm h3 {
+    font-size:20px;
+    font-weight:700;
+}
+#cssmenu .sub-item {
+    background-color:#FFFFFF;
+    position:relative;       
+    transition:all 0.3s;
+}
+
+#cssmenu .dropdown li:hover > span, #cssmenu .dropdown li:hover > a
+{
+
+    color:#000000;
+    background-color:#EEEEEE;
+}
+
+#cssmenu .clm a:hover
+{
+    color:#000000;
+    transition:color 0.2s;
+}
+
+#cssmenu .dropdown.right0 {left:auto;right:0;} 
+#cssmenu .dropdown li > .dropdown.right0 {left:auto;right:100%;} 
+       
+#cssmenu li.full-width{
+    position:static;
+}
+#cssmenu li.full-width .dropdown{
+    width:100%;
+    left:0;
+    box-sizing:border-box;
+}  
+
+#cssmenu li:hover > .dropdown
+{
+    display:block;
+    opacity:1;
+    z-index:1;
+}
+
+#cssmenu .dropdown li > .dropdown
+{
+    left:100%; right:auto;
+    top:0;
+}
+
+#cssmenu ul.dropdown
+{
+    min-width:240px; /* Sub level menu min width */
+}
+
+#cssmenu div.dropdown  {
+    text-align:center;
+}
+
+/* each column */
+#cssmenu .clm
+{
+    text-align:left;
+    margin:20px;
+    vertical-align:top;/*or middle*/
+    width:auto;
+    min-width:240px;
+    display:inline-block;
+    *display:inline;*zoom:1;
+}
+
+#cssmenu .clm a:hover
+{
+    color:#000000;
+    text-decoration:underline;
+}
+
+/*-----------Arrows----------------*/
+#cssmenu .arrow {
+    color:inherit;
+    border-style:solid; border-width:2px 2px 0 0; padding:5px; transform:rotate(135deg);margin-top:-10px;margin-left:5px;
+    position:relative;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align:middle;
+    overflow:hidden;/*for IE6*/
+}
+        
+#cssmenu .dropdown .arrow {
+    transform:rotate(45deg);
+    top:50%;margin-top:-7px;
+    position:absolute;left:auto;right:20px;
+} 
+
+/*######## styles for mobile mode */
+
+.menu-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .menu-icon {display:inline-block;}
+
+    #cssmenu  {
+        width:100%;
+        max-width:500px;
+        display:none;
+        background-color:#FFFFFF;
+        border:1px solid rgba(0,0,0,0.2);
+        box-sizing:border-box;
+        z-index:999999990;
+    }
+
+    /*--begin mark1--*/
+
+    #cssmenu  {
+        position:relative;
+        left:-130%;
+        right:auto; box-shadow:4px 0 18px rgba(0,0,0,0.3);
+        transition:all 411ms cubic-bezier(.7, 0,1,.4);
+    }
+
+    #cssmenu.active {
+        left:0;
+        transition:all 411ms cubic-bezier(.16,.76,.45,1);
+    }
+
+    #mcmenu {z-index:99999999;}
+
+.menu-icon.active {z-index:999999994;position:relative;}
+
+    /*--end mark1--*/
+
+    #cssmenu ul  {
+        background-color:transparent;
+        transition:all 411ms ease;
+        box-sizing:border-box;
+        border:none;
+        border-radius: 0;
+    }
+
+    #cssmenu .mobileHide {
+        display:none;
+    }
+
+    #cssmenu li {
+        text-align:center;
+        display:block;
+        position:static;
+    }
+
+    #cssmenu >ul>li>span, #cssmenu >ul>li>a 
+    {       
+        font-size:22px;
+    }
+    /* #cssmenu li:hover span, #cssmenu li:hover a {
+     
+        color:#000000;
+        background-color:#FFFFFF;
+    }*/
+}
+/*----------- menu-icon ----------------*/
+.menu-icon-wrapper {
+    padding:4px;
+    text-align:left;
+}
+.menu-icon {
+    padding:6px;
+    cursor: pointer;
+    outline: none;
+    background-color:transparent;
+    border:1px solid transparent;
+    border-radius:3px;
+    transition: all 0.25s ease-out;
+    user-select:none;
+    box-sizing:content-box;
+    font-size:0;
+    position:relative;
+}
+
+.menu-icon.active{
+    background-color:transparent;
+}
+.three-line{
+  width: 28px;
+  height: 18px;
+  position: relative;
+  display: inline-block;
+  font-size: 0;
+}
+.three-line span{
+  background-color:#333333;
+  position: absolute;
+  border-radius: 2px;
+  transition: transform .5s ease-in-out;
+  width:100%;
+  height: 2px;
+  left: 0;
+  transform: rotate(0);
+}
+.three-line span:nth-child(1){
+  top:0;
+}
+.three-line span:nth-child(2){
+  top:8px;
+  visibility:visible;
+}
+.three-line span:nth-child(3){
+  bottom:0;
+}
+.menu-icon.active .three-line span:nth-child(1){
+  transform: rotate(225deg);
+  top: 8px;
+}
+.menu-icon.active .three-line span:nth-child(2){
+  transform: rotate(180deg);
+  visibility:hidden;
+}
+.menu-icon.active .three-line span:nth-child(3){
+  transform: rotate(315deg);
+  top: 8px;
+}
+/*End of styles for mobile mode ########*/
+
+@keyframes topItemAnimation{
+  from {opacity: 0;  transform:translate3d(-16%, 0, 0);}
+  to {opacity: 1; transform:translate3d(0, 0, 0);}
+}
+#cssmenu li a {animation:none;}
+#cssmenu.active li a { animation: topItemAnimation 0.5s ease 0.5s backwards;}
+#cssmenu.active li:nth-of-type(1) a { animation: topItemAnimation 0.5s ease 0.08333333333333333s backwards;}
+#cssmenu.active li:nth-of-type(2) a { animation: topItemAnimation 0.5s ease 0.16666666666666666s backwards;}
+#cssmenu.active li:nth-of-type(3) a { animation: topItemAnimation 0.5s ease 0.25s backwards;}
+#cssmenu.active li:nth-of-type(4) a { animation: topItemAnimation 0.5s ease 0.3333333333333333s backwards;}
+#cssmenu.active li:nth-of-type(5) a { animation: topItemAnimation 0.5s ease 0.4166666666666667s backwards;}@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) { #cssmenu.active li a{animation:none!important;}}
