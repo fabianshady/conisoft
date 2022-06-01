@@ -14,6 +14,11 @@
   }
 }
 
+.Images {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .App-header {
   border-radius: 35px;
   height: 98vh;
@@ -121,8 +126,10 @@ img{
 
   margin-bottom: 3vmin;
   margin-top: 3vmin;
+  margin-left: 2vw;
+  margin-right: 2vw;
   height: 60vh;
-  width: 93vw;
+  width: 1800px;
   flex-wrap: wrap;
   border-radius: 35px;
   background-image: linear-gradient(
@@ -145,8 +152,10 @@ img{
   flex-direction: row;
   margin-bottom: 3vmin;
   margin-top: 3vmin;
+  margin-left: 1vw;
+  margin-right: 1vw;
   height: 60vh;
-  width: 45vw;
+  width: 800px;
   flex-wrap: wrap;
   border-radius: 50px;
   background-image: linear-gradient(
