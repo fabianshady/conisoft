@@ -2,6 +2,7 @@ import './App.css';
 import Principal from './components/principal';
 import Slider from './components/slider';
 import Cards from './components/cards';
+import Carruselconteiner from './components/carruselconteiner';
 
 function App() {
   return (
@@ -63,6 +64,9 @@ function App() {
         </div>
       </nav>
       <Principal />
+    <div className='carrusel'>
+        <Carruselconteiner/>
+      </div>
       <Slider />
       <Cards />
     </div>
